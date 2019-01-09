@@ -1,0 +1,43 @@
+<div class="card">
+    <div class="card-block">
+      <div class="clr-row clr-align-items-center clr-justify-content-between">
+        
+        <div class="clr-col-sm-12 clr-col-md-6">
+            <slideshow [height]="height"
+            [minHeight]="'525px'"
+            [autoPlay]="true"
+            [showArrows]="true"
+            [lazyLoad]="imageSources?.length > 1"
+            [autoPlayWaitForLazyLoad]="true"
+            [imageUrls]="imageUrlArray"></slideshow>
+        </div>
+
+        <div class="clr-col-sm-12 clr-col-md-6">
+          <form clrForm>
+                <h1>Nombre del Producto</h1>
+                <h5>Este es un texto de prueba donde se encontrará la descripción del producto a mostrar para dar un mejor detalle del mismo...</h5> 
+                <h3><b>$100.00</b></h3>     
+            <clr-select-container>
+                <label class="clr-control-label">Cantidad</label>
+                <select clrSelect name="options" required>
+                  <option value="one">1</option>
+                  <option value="two">2</option>
+                  <option value="three">3</option>
+                </select>
+                <clr-control-helper>Seleccione la cantidad</clr-control-helper>
+                <clr-control-error>This field is required!</clr-control-error>
+              </clr-select-container>
+            <br>
+            <button type="button" class="btn btn-icon btn-primary">
+                <clr-icon shape="shopping-cart"></clr-icon>
+                Añadir
+            </button>
+        </form>
+        </div>
+
+      </div>      
+    </div>
+
+</div>
+
+

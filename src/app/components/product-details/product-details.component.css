@@ -1,0 +1,12 @@
+.responsive > img {
+    width: 100%;
+    height: auto;
+    max-width: 300px;
+  }
+
+  .responsive{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
